@@ -1,5 +1,6 @@
 import tkinter as tk
 
+# basic view of tkinter
 window = tk.Tk()
 window.title("calculator")
 window.geometry("400x200")
@@ -8,11 +9,11 @@ answer = tk.StringVar()
 on_hit = False
 entry1 = tk.Entry(window, show=None)
 entry2 = tk.Entry(window, show=None)
-
-# text
-text = tk.Text(window, height=6)
+text = tk.Text(window, height=6, bg="#F0F0FF")
 
 
+# a very simple version to implement "plus"
+# TODO: to elegantly implement a new "plus"
 def plus():
     try:
         var1 = float(entry1.get())
